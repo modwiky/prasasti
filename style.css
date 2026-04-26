@@ -129,3 +129,69 @@ footer {
   text-decoration: underline;
   color: #0b0080;
 }
+
+/* ----------------------------------------------------
+   Rich Content (Quotes, Code, etc.)
+---------------------------------------------------- */
+
+/* Blockquotes */
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.75em 1em;
+  border-left: 4px solid var(--cyan);
+  background: #fdf6e3; /* Solarized base3 */
+  color: var(--muted);
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Optional quote flair */
+blockquote::before {
+  content: "“";
+  font-size: 2em;
+  color: var(--cyan);
+  vertical-align: -0.2em;
+  margin-right: 0.2em;
+}
+
+/* Inline code */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: #fdf6e3;
+  color: var(--orange);
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+
+/* Code blocks */
+pre {
+  background: #002b36; /* Solarized dark */
+  color: #839496;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 6px;
+  margin: 1.5em 0;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+/* Optional depth */
+pre {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
+}
